@@ -4,7 +4,14 @@ This Command Generate All Files In Routes Folder To Ziggy Json File And Make Aut
 
 ## Installation
 
-- Open vite.config.js Then At End Of Plugins Add
+- Open vite.config.js Then At The Top Of File Add
+
+```bash
+import { exec } from "node:child_process";
+```
+
+- And At The End Of Plugins Add
+
 ```bash
 {
     name: "ziggy",
